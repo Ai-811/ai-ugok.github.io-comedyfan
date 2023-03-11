@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<!-- コンテンツの言語を設定する -->
+
+<head>
+	<meta charset="UTF-8">
+	<!-- エンコードの種類を設定する -->
+	<title>COMMENT - COMEDY FAN</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- スタイルシートファイルを設定する -->
+	<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+
+<!-- ページをidで区別する -->
+
+<body id="contact">
+	<!-- ヘッダー部 -->
+	<header>
+		<h1><a href="index.html"><img src="img/logo.png" alt="COMEDY FAN">
+				<!-- ロゴ画像 -->
+				COMEDY FAN</a></h1>
+		<!-- ナビゲーションメニューであることを明確にする -->
+		<nav>
+			<ul>
+				<li><a href="index.html">TOP</a></li>
+				<li><a href="menu.html">LINEUP</a></li>
+				<li><a href="about.html">DETAIL</a></li>
+				<li><a href="contact.html">COMMENT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article>
+		<h1>あなたのおすすめは？</h1>
+		<p>
+			あなたの好きな芸人さんは誰ですか？好きなお笑い番組は何ですか？
+		</p>
+		<p>
+			ぜひ、コメントに書いて教えてください！
+		</p>
+		<form action="https://www.rescue.ne.jp/form/mail.cgi" method="post">
+			<!-- フォームデータの送信先を指定 -->
+			<input type="hidden" name="_uid" value="XXXXXXXXXXXXXXXX">
+			<!-- フォームデコードサービスの id を指定 -->
+			<input type="hidden" name="_done" value="http://www.www.www/">
+			<!-- 送信後に表示するページの URL -->
+			<input type="hidden" name="_subject" value="お問い合わせ">
+			<!-- メールのタイトル -->
+			<p2>
+				<label>
+					<!--ラベルをつけます-->
+					名前:<input type="text" name="username">
+					<!--名前の入力欄-->
+				</label>
+			</p2>
+			<p2>
+				<label>
+					メールアドレス:<input type="email" name="usermail">
+				</label>
+			</p2>
+			<p2>
+				<label>コメント:
+					<textarea name="usercomment"></textarea><img src="img/animegif.gif" align="right">
+				</label>
+			</p2>
+			<p><input type="submit" value="送信"></p>
+			<!--送信ボタンを作成 -->
+			<small>Powered by
+				<a href="http://www.rescue.ne.jp/" target="_blank">CGI RESCUE</a>
+				<sup>&reg;</sup></small>
+		</form>
+	</article>
+
+	<!-- フッター部 -->
+	<footer>
+		<small> &copy; COMEDY FAN 2020/5 all rights reserved.</small>
+	</footer>
+</body></html>
