@@ -1,0 +1,463 @@
+﻿/* Googleフォントの利用設定 */
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* 基本となる設定 */
+body {
+	/* 基本のフォントを設定 */
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+	background-color: rgb(120, 158, 229);
+	/* ページの背景色を設定する */
+	background-image: url(../img/back.png);
+	margin: 0;
+	/* ページ周囲の余白に０を設定する */
+}
+
+h1 {
+	font-size: 80px;
+	/* タイトルの文字サイズを設定する */
+	margin-top: 0;
+	/* タイトル上側の余白に０を設定する */
+	margin-bottom: 0;
+	/* タイトル下側の余白に０を設定する */
+	text-align: center;
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+h2 {
+	font-size: 35px;
+	color: rgb(24, 61, 131);
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+h3 {
+	text-align: center;
+	font-size: 35px;
+	color: rgb(24, 61, 131);
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+h4 {
+	text-align: left;
+}
+
+p {
+	line-height: 2;
+	/* 行の高さ（行の間隔）を設定する */
+	text-align: center;
+	font-size: 15px;
+}
+
+/* ヘッダー部の設定 */
+header {
+	background-color: #eaeaea;
+	/* ヘッダーの背景に白色を設定する */
+	border-bottom: solid 1px #aaaaaa;
+	/* ヘッダー下側の罫線を設定する */
+	margin-bottom: 30px;
+	/* ヘッダー下側の余白を設定する */
+	-webkit-box-shadow: 0 1px 7px #aaaaaa;
+	/* 古いスマホ用の影の設定 */
+	box-shadow: 0 5px 10px #aaaaaa;
+	/* ヘッダーに影を設定する */
+	padding: 5px;
+	/* ヘッダーに余白を設定する */
+}
+
+header h1 {
+	font-family: 'Chela One', cursive;
+	/* サイト名のフォントを設定する */
+	font-size: 24px;
+	/* サイト名の文字サイズを設定する */
+	width: 900px;
+	/* サイト名表示部の横幅を設定する */
+	margin-left: auto;
+	/* サイト名を左右中心に・・・ */
+	margin-right: auto;
+	/* ・・・表示するための設定 */
+}
+
+/* 記事部の設定 */
+article {
+	background-color: #ffffff;
+	/* 記事の背景に白色を設定する */
+	width: 1000px;
+	/* 記事の横幅を設定する */
+	margin-left: auto;
+	/* 記事を左右中心に・・・ */
+	margin-right: auto;
+	/* ・・・表示するための設定 */
+	border: solid 1px #aaaaaa;
+	/* 記事を囲む罫線の設定 */
+	padding: 30px;
+	/* 罫線内側の余白を設定する */
+	-webkit-box-sizing: border-box;
+	/* 古いスマホ用の罫線の設定 */
+	-moz-box-sizing: border-box;
+	/* 古いスマホ用の罫線の設定 */
+	box-sizing: border-box;
+	/* ボックスの幅と高さに余白と罫線を含む*/
+	margin-bottom: 15px;
+	/* 記事ボックスと下のフッターとの間隔を設定 */
+	-webkit-box-shadow: 1px 5px 10px rgb(24, 61, 131);
+	/* 古いスマホ用の影の設定 */
+	box-shadow: 1px 5px 10px rgb(24, 61, 131);
+	/* 記事ボックスに影を設定する */
+	border-radius: 50px;
+	/* 四隅の角を丸くする */
+	overflow: hidden;
+	/* 画像をボックスに含めて表示 */
+}
+
+/* 記事 */
+#posts article,
+#message {
+	/* 紹介文のデザインを指定*/
+	background-color: rgba(214, 255, 238, 0.6);
+	width: 1280px;
+	border: solid 1px #aaaaaa;
+	padding: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	-webkit-box-shadow: 1px 1px 3px #aaaaaa;
+	box-shadow: 1px 1px 3px #aaaaaa;
+	border-radius: 0px;
+	overflow: hidden;
+	/* 画像をボックスに含めて表示 */
+}
+
+/* フッター部の設定 */
+footer {
+	width: 1100px;
+	/* フッターの横幅を設定する */
+	margin-left: auto;
+	/* フッターを左右中心に・・・ */
+	margin-right: auto;
+	/* ・・・表示するための設定 */
+	clear: both;
+	background-color: #eaeaea;
+	margin-top: 30px;
+}
+
+/* 画像を中央に配置するレイアウト */
+figure.photo-center {
+	text-align: center;
+	/* 中央寄せの行に設定する（画像を中央に表示する） */
+	margin-top: 30px;
+	/* 図表上側の文章との隙間を設定する */
+	margin-bottom: 30px;
+	/* 図表下側の文章との隙間を設定する */
+}
+
+/* 画像を左側に配置するレイアウトのクラス */
+figure.photo-left {
+	margin: 0;
+	margin-right: 20px;
+	/* 右の余白を20ピクセルに設定 */
+	float: left;
+	/* 画像を左側へ寄せる */
+}
+
+figure.photo-left img {
+	width: 470px;
+}
+
+/* 画像を右側に配置するレイアウトのクラス */
+figure.photo-right {
+	margin: 0;
+	margin-left: 20px;
+	/* 左の余白を20ピクセルに設定 */
+	float: right;
+	/* 画像を右側へ寄せる */
+}
+
+figure.photo-right img {
+	width: 470px;
+}
+
+.box {
+	position: relative;
+}
+
+.box p1 {
+	position: absolute;
+	color: black;
+	top: 73%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 20px 20px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 30px;
+	font-family: 'Yusei Magic', sans-serif;
+	line-height: 1;
+	text-align: center;
+	width: 430px;
+}
+
+.box img {
+	width: 100%;
+}
+
+span {
+	color: #159688;
+}
+
+/* リンク */
+
+a:hover {
+	color: #159688;
+	/* カーソルを重ねた時の色を設定 */
+}
+
+a img {
+	border: none;
+	/* 画像の周りの罫線を削除 */
+}
+
+/* 関連記事へのリンク */
+aside {
+	border-radius: 0px;
+	padding: 10px;
+	background-color: rgba(214, 255, 238, 0.6);
+	margin-top: 50px;
+}
+
+aside h4 {
+	font-family: 'Yusei Magic', sans-serif;
+	font-size: 30px;
+	color: rgb(24, 61, 131);
+	border-bottom: dotted 1px #000000;
+}
+
+aside ul {
+	list-style-image: url(../img/listmark.png);
+}
+
+aside a {
+	color: #000000;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+/* ナビゲーションメニュー */
+nav ul {
+	list-style-type: none;
+	/* リストマークを削除 */
+	margin-top: 0;
+	/* 余計は余白を削除 */
+	margin-bottom: 0;
+	padding-left: 0;
+	font-size: 0;
+	/* リンクの間の余計な余白を削除 */
+}
+
+nav li {
+	display: inline;
+	/* リンクを横に並べて表示 */
+	font-size: 12px;
+	/* リンクの文字を小さくする */
+	border-right: solid 1px #aaaaaa;
+	/* リンクを罫線で区切る */
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav li:first-child {
+	border-left: solid 1px #aaaaaa;
+	/* 一つ目のリンク左にも罫線 */
+}
+
+nav {
+	width: 900px;
+	/* メニューをメインコンテンツに揃えて表示 */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	margin-top: -27px;
+	margin-bottom: 10px;
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	/* リンクの下線を削除 */
+}
+
+/* メニューの一覧ページ専用 */
+#posts article img {
+	/* サムネイル画像を左に寄せる */
+	float: left;
+	margin-right: 20px;
+}
+
+#posts article h1 {
+	/* 記事タイトル文字を小さく */
+	font-size: 24px;
+}
+
+#posts section {
+	/* 「メニュー」を概要に揃える */
+	width: 900px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#posts header {
+	/* ヘッダー下の余白を小さく */
+	margin-bottom: 20px;
+}
+
+#posts article a {
+	color: #000000;
+	text-decoration: none;
+	/* 下線を非表示 */
+	display: block;
+	/* aがブロックボックスを構成するように表示 */
+	overflow: hidden;
+	/* 画像をボックスに含めて表示 */
+	padding: 20px;
+	/* aの内側に余白を入れる */
+}
+
+#posts article a:hover {
+	background-color: rgba(166, 255, 218, 0.6);
+	/* カーソルを重ねた時の色 */
+}
+
+#posts article {
+	padding: 0;
+	/* article の内側の余白を削除 */
+}
+
+/* トップページ */
+#top header {
+	/*ヘッダーの下の余白を削除*/
+	margin-bottom: 0;
+}
+
+#photo {
+	background-image: url(../img/photo.jpeg);
+	/*トップ用の画像表示*/
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	/*背景画像を中央に表示*/
+	background-color: #5f451c;
+	/*画像の両サイドに色をつける*/
+	text-align: center;
+	/*文字を中央に表示*/
+	padding-top: 320px;
+	/*背景画像を大きく表示*/
+	padding-bottom: 80px;
+}
+
+#photo h1 {
+	color: #ffffff;
+	/*文字のデザインを指定*/
+	font-size: 60px;
+	font-family: 'Otomanopee One', sans-serif;
+	text-shadow: 0 5px 10px #000000;
+	/*文字に影をつける*/
+}
+
+#photo p {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0 5px 10px #000000;
+	/*文字に影をつける*/
+}
+
+/* アバウトページ */
+table,
+th,
+td {
+	border: solid 3px #000000;
+	/* テーブルの罫線を表示 */
+}
+
+table {
+	border-collapse: collapse;
+	/* テーブルの罫線を重ねて表示 */
+	margin-left: auto;
+	/* テーブルの配置を指定 */
+	margin-right: auto;
+	margin-top: 30px;
+	/* キャプションと説明文の間隔を調整 */
+}
+
+th,
+td {
+	padding: 20px 20px 20px 20px;
+	/* セルの内側に余白を入れる */
+}
+
+th {
+	width: 600px;
+	/* セルの横幅を指定 */
+	background-color: rgba(25, 255, 160, 0.6);
+	text-align: center;
+	/* 見出しの行揃え */
+}
+
+td {
+	width: 800px;
+	/* セルの横幅を指定 */
+	background-color: rgba(155, 255, 214, 0.6);
+	text-align: center;
+}
+
+caption {
+	font-weight: bold;
+	/* キャプションのデザインを指定 */
+	background-color: #d9d8a7;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+/* お問い合わせページ */
+input,
+textarea {
+	display: block;
+	/* ラベルを入力欄の上に表示 */
+}
+
+p2 {
+	text-align: left;
+	line-height: 2;
+}
+
+input {
+	width: 400px;
+	/* 入力欄の横幅を調整 */
+}
+
+input[type="submit"] {
+	width: 200px;
+	/* 送信ボタンの横幅を調整 */
+	background-color: #6ac6ff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ddf2ff), to(#6ac6ff));
+	background-image: -webkit-linear-gradient(top, #ddf2ff 0%, #6ac6ff 100%);
+	background-image: linear-gradient(to bottom, #ddf2ff 0%, #6ac6ff 100%);
+	border: solid 1px #aaaaaa;
+	/* 送信ボタンの罫線のデザイン */
+	border-radius: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+textarea {
+	/* コメント入力欄の横幅と高さの指定 */
+	width: 600px;
+	height: 120px;
+}
